@@ -13,15 +13,13 @@ Follow these steps to set up the application locally using Docker.
 
 Open your terminal and run the following command to clone the repository:
 
-git clone <repository-url>
+git clone https://github.com/StreamlineXpert/sentrifugo-docker.git
 
 ### Step 2: Change Directory
 
 Navigate into the cloned directory:
 
-cd <your-directory-name>
-
-Make sure to replace `<your-directory-name>` with the name of the directory you just cloned.
+cd sentrifugo-docker
 
 ### Step 3: Build and Run the Application
 
@@ -49,4 +47,4 @@ Once you have logged in, you can start using the application!
 
 ---
 
-If you have any questions or need further assistance, please refer to the README.md or open an issue in the repository.
+If you have any questions or need further assistance, please refer to each step carefully in the README.md or open an issue in the repository.
