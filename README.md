@@ -26,7 +26,7 @@ Navigate into the cloned directory:
 
     Use Docker Compose to build and run the application:
 
-    docker-compose up --build
+    docker compose up --build
 
 ### Step 4: Access the Application
 
