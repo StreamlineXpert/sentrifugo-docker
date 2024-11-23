@@ -20,7 +20,7 @@
 Navigate into the cloned directory:
 
     cd sentrifugo-docker
-
+    sudo chown -R  www-data:www-data sentrifugo
 
 ### Step 3: Build and Run the Application
 
