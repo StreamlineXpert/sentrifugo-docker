@@ -1,7 +1,7 @@
 <?php
 /**
  * PHPMailer SPL autoloader.
- * PHP Version 5
+ * PHP Version 5.1.2+
  * @package PHPMailer
  * @link https://github.com/PHPMailer/PHPMailer/ The PHPMailer GitHub project
  * @author Marcus Bointon (Synchro/coolbru) <phpmailer@synchromedia.co.uk>
@@ -12,9 +12,6 @@
  * @copyright 2010 - 2012 Jim Jagielski
  * @copyright 2004 - 2009 Andy Prevost
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
- * @note This program is distributed in the hope that it will be useful - WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.
  */
 
 /**
@@ -30,20 +27,7 @@ function PHPMailerAutoload($classname)
     }
 }
 
+// Only use SPL autoloading
 if (version_compare(PHP_VERSION, '5.1.2', '>=')) {
-    //SPL autoloading was introduced in PHP 5.1.2
-    if (version_compare(PHP_VERSION, '5.3.0', '>=')) {
-        spl_autoload_register('PHPMailerAutoload', true, true);
-    } else {
-        spl_autoload_register('PHPMailerAutoload');
-    }
-} else {
-    /**
-     * Fall back to traditional autoload for old PHP versions
-     * @param string $classname The name of the class to load
-     */
-    function __autoload($classname)
-    {
-        PHPMailerAutoload($classname);
-    }
+    spl_autoload_register('PHPMailerAutoload', true, true);
 }

@@ -21,6 +21,7 @@ Navigate into the cloned directory:
 
 cd sentrifugo-docker
 
+
 ### Step 3: Build and Run the Application
 
 Use Docker Compose to build and run the application:
